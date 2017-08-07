@@ -1,0 +1,773 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="html," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/./123.png?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="1、HTML5的优点与缺点优点： a、网络标准统一、HTML5本身是由W3C推荐出来的。        b、多设备、跨平台         c、即时更新。        d、提高可用性和改进用户的友好体ge验；        e、有几个新的标签，这将有助于开发人员定义重要的内容；         f、可以给站点带来更多的多媒体元素(视频和音频)；          g、可以很好的替代Flash和S">
+<meta name="keywords" content="html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端面试之HTML篇">
+<meta property="og:url" content="http://yoursite.com/2017/08/07/前端面试之HTML篇/index.html">
+<meta property="og:site_name" content="feamos Blog">
+<meta property="og:description" content="1、HTML5的优点与缺点优点： a、网络标准统一、HTML5本身是由W3C推荐出来的。        b、多设备、跨平台         c、即时更新。        d、提高可用性和改进用户的友好体ge验；        e、有几个新的标签，这将有助于开发人员定义重要的内容；         f、可以给站点带来更多的多媒体元素(视频和音频)；          g、可以很好的替代Flash和S">
+<meta property="og:updated_time" content="2017-08-07T05:28:59.780Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端面试之HTML篇">
+<meta name="twitter:description" content="1、HTML5的优点与缺点优点： a、网络标准统一、HTML5本身是由W3C推荐出来的。        b、多设备、跨平台         c、即时更新。        d、提高可用性和改进用户的友好体ge验；        e、有几个新的标签，这将有助于开发人员定义重要的内容；         f、可以给站点带来更多的多媒体元素(视频和音频)；          g、可以很好的替代Flash和S">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/08/07/前端面试之HTML篇/"/>
+
+
+
+
+
+  <title> 前端面试之HTML篇 | feamos Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">feamos Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/07/前端面试之HTML篇/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="fengpeidong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="feamos Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                前端面试之HTML篇
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-07T13:25:53+08:00">
+                2017-08-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body han-init-context" itemprop="articleBody">
+
+      
+      
+
+      
+        <h5 id="1、HTML5的优点与缺点"><a href="#1、HTML5的优点与缺点" class="headerlink" title="1、HTML5的优点与缺点"></a>1、HTML5的优点与缺点</h5><pre><code>优点： a、网络标准统一、HTML5本身是由W3C推荐出来的。
+       b、多设备、跨平台 
+       c、即时更新。
+       d、提高可用性和改进用户的友好体ge验；
+       e、有几个新的标签，这将有助于开发人员定义重要的内容； 
+       f、可以给站点带来更多的多媒体元素(视频和音频)；  
+       g、可以很好的替代Flash和Silverlight；
+       h、涉及到网站的抓取和索引的时候，对于SEO很友好； 
+       i、被大量应用于移动应用程序和游戏。 
+</code></pre><p><a id="more"></a>## Quick Start</p>
+<p>  缺点： a、安全：像之前Firefox4的web socket和透明代理的实现存在严重的安全问题，同时web storage、web socket 这样的功能很容易被<br>              黑客利用，来盗取用户的信息和资料。<br>           b、完善性：许多特性各浏览器的支持程度也不一样。<br>           c、技术门槛：HTML5简化开发者工作的同时代表了有许多新的属性和API需要开发者学习，像web worker、web socket、web storage  等新特性，后台甚至浏览器原理的知识，机遇的同时也是巨大的挑战<br>           d、性能：某些平台上的引擎问题导致HTML5性能低下。<br>           e、浏览器兼容性：最大缺点，IE9以下浏览器几乎全军覆没。</p>
+<h5 id="2、Doctype作用？严格模式与混杂模式如何区分？有何意义？"><a href="#2、Doctype作用？严格模式与混杂模式如何区分？有何意义？" class="headerlink" title="2、Doctype作用？严格模式与混杂模式如何区分？有何意义？"></a>2、Doctype作用？严格模式与混杂模式如何区分？有何意义？</h5><pre><code>doctype声明指出阅读程序应该用什么规则集来解释文档中的标记。在Web文档的情况下，“阅读程序”通常是浏览器或者校验器这样的一个程序，“规则”则是W3C所发布的一个文档类型定义（DTD）中包含的规则。
+ (1) 声明位于文档中的最前面的位置，处于标签之前。此标签可告知浏览器文档使用哪种 HTML 或 XHTML 规范。该标签可声明三种 DTD 类型，分别表示严格版本、过渡版本以及基于框架的HTML 文档。 
+(2)所谓的标准模式是指，浏览器按 W3C 标准解析执行代码；怪异模式则是使用浏览器自己的方式解析执行代码，因为不同浏览器解析执行的方式不一样，所以我们称之为怪异模式。 严格模式是浏览器根据web标准去解析页面，是一种要求严格的DTD，不允许使用任何表现层的语法，如
+。严格模式的排版和JS 运作模式是以该浏览器支持的最高标准运行混杂模式则是一种向后兼容的解析方法，说的透明点就是可以实现IE5.5以下版本浏览器的渲染模式。 
+(3)浏览器解析时到底使用标准模式还是怪异模式，与你网页中的 DTD 声明直接相关， DTD 声明定义了标准文档的类型（标准模式解析）文档类型，会使浏览器使用相应的方式加载网页并显示，忽略 DTD 声明 ,将使网页进入怪异模式。
+</code></pre><h5 id="3、浏览器内核："><a href="#3、浏览器内核：" class="headerlink" title="3、浏览器内核："></a>3、浏览器内核：</h5><pre><code>1.     IE:trident 内核
+2.     Firefox：gecko内核
+3.     Safari： webkit内核
+4.     Opera：以前是presto内核，Opera现已改用Google Chrome的Blink内核
+5.     Chrome：Blink（基于webkit，Google与Opera Software共同开发）
+</code></pre><h5 id="4、说说你对HTML5认识"><a href="#4、说说你对HTML5认识" class="headerlink" title="4、说说你对HTML5认识?"></a>4、说说你对HTML5认识?</h5><pre><code>是什么：
+HTML5指的是包括 HTML 、 CSS 和 JavaScript 在内的一套技术组合。它希望能够减少网页浏览器对于需要插件的丰富性网络应用服务（ Plug-in-Based Rich Internet Application ， RIA ），例如： AdobeFlash 、 Microsoft Silverlight 与 Oracle JavaFX 的需求，并且提供更多能有效加强网络应用的标准集。 HTML5 是 HTML 最新版本， 2014 年 10 月由万维网联盟（ W3C ）完成标准制定。目标是替换 1999 年所制定的 HTML 4.01 和 XHTML 1.0 标准，以期能在互联网应用迅速发展的时候，使网络标准达到匹配当代的网络需求。
+为什么：
+HTML4陈旧不能满足日益发展的互联网需要，特别是移动互联网。为了增强浏览器功能 Flash 被广泛使用，但安全与稳定堪忧，不适合在移动端使用（耗电、触摸、不开放）。
+HTML5增强了浏览器的原生功能，符合 HTML5 规范的浏览器功能将更加强大，减少了 Web 应用对插件的依赖，让用户体验更好，让开发更加方便，另外 W3C 从推出 HTML4.0 到 5.0 之间共经历了 17 年， HTML 的变化很小，这并不符合一个好产品的演进规则。
+</code></pre><h5 id="5、对web标准以及w3c的理解与认识？"><a href="#5、对web标准以及w3c的理解与认识？" class="headerlink" title="5、对web标准以及w3c的理解与认识？"></a>5、对web标准以及w3c的理解与认识？</h5><pre><code>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外 链css和 js 脚本、结构行为表现的分离、
+文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，
+容易维 护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性。
+</code></pre><h5 id="6、总体会有布局、样式解析和脚本执行三个方面的区别？"><a href="#6、总体会有布局、样式解析和脚本执行三个方面的区别？" class="headerlink" title="6、总体会有布局、样式解析和脚本执行三个方面的区别？"></a>6、总体会有布局、样式解析和脚本执行三个方面的区别？</h5><ul>
+<li>盒模型：在W3C标准中，如果设置一个元素的宽度和高度，指的是元素内容的宽度和高度，而在Quirks 模式下，IE的宽度和高度还包含了padding和border。</li>
+<li>设置行内元素的高宽：在Standards模式下，给<span>等行内元素设置wdith和height都不会生效，而在quirks模式下，则会生效。</span></li>
+<li>设置百分比的高度：在standards模式下，一个元素的高度是由其包含的内容来决定的，如果父元素没有设置百分比的高度，子元素设置一个百分比的高度 是无效的。</li>
+<li>用margin:0 auto设置水平居中：使用margin:0 auto在standards模式下可以使元素水平居中，但在quirks模 式下却会失效。</li>
+</ul>
+<h5 id="7、div-css的布局较table布局有什么优点？"><a href="#7、div-css的布局较table布局有什么优点？" class="headerlink" title="7、div+css的布局较table布局有什么优点？"></a>7、div+css的布局较table布局有什么优点？</h5><ul>
+<li>改版的时候更方便 只要改css文件。</li>
+<li>页面加载速度更快、结构化清晰、页面显示简洁。</li>
+<li>表现与结构相分离。</li>
+<li>易于优化（seo）搜索引擎更友好，排名更容易靠前。</li>
+</ul>
+<h5 id="8、你能描述一下渐进增强和优雅降级之间的不同吗"><a href="#8、你能描述一下渐进增强和优雅降级之间的不同吗" class="headerlink" title="8、你能描述一下渐进增强和优雅降级之间的不同吗?"></a>8、你能描述一下渐进增强和优雅降级之间的不同吗?</h5><ul>
+<li>渐进增强 progressive enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。</li>
+<li>优雅降级 graceful degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。</li>
+</ul>
+<h5 id="9、为什么利用多个域名来存储网站资源会更有效？"><a href="#9、为什么利用多个域名来存储网站资源会更有效？" class="headerlink" title="9、为什么利用多个域名来存储网站资源会更有效？"></a>9、为什么利用多个域名来存储网站资源会更有效？</h5><ul>
+<li>CDN缓存更方便</li>
+<li>突破浏览器并发限制</li>
+<li>节约cookie带宽</li>
+<li>节约主域名的连接数，优化页面响应速度</li>
+<li>防止不必要的安全问题</li>
+</ul>
+<h5 id="10、请描述一下cookies，sessionStorage和localStorage的区别？"><a href="#10、请描述一下cookies，sessionStorage和localStorage的区别？" class="headerlink" title="10、请描述一下cookies，sessionStorage和localStorage的区别？"></a>10、请描述一下cookies，sessionStorage和localStorage的区别？</h5><p>sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也 随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。</p>
+<ul>
+<li>Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。</li>
+<li>除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发 者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部 分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生。</li>
+</ul>
+<h5 id="11、知道的网页制作会用到的图片格式有哪些？"><a href="#11、知道的网页制作会用到的图片格式有哪些？" class="headerlink" title="11、知道的网页制作会用到的图片格式有哪些？"></a>11、知道的网页制作会用到的图片格式有哪些？</h5><p>png-8，png-24，jpeg，gif，svg</p>
+<p>但是上面的那些都不是面试官想要的最后答案。面试官希望听到是Webp。（是否有关注新技术，新鲜事物）</p>
+<p>科普一下Webp：WebP格式，谷歌（google）开发的一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有JPEG的2/3，并能节省大量的服务器带宽资源和数据空间。Facebook Ebay等知名网站已经开始测试并使用WebP格式。</p>
+<p>在质量相同的情况下，WebP格式图像的体积要比JPEG格式图像小40%</p>
+<h5 id="12、在css-js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？"><a href="#12、在css-js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？" class="headerlink" title="12、在css/js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？"></a>12、在css/js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？</h5><p>dns缓存，cdn缓存，浏览器缓存，服务器缓存。</p>
+<h5 id="13、一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验？"><a href="#13、一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验？" class="headerlink" title="13、一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验？"></a>13、一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验？</h5><ul>
+<li>图片懒加载，在页面上的未可视区域可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载。</li>
+<li>如果为幻灯片、相册等，可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载。</li>
+<li>如果图片为css图片，可以使用CSSsprite，SVGsprite，Iconfont、Base64等技术。</li>
+<li>如果图片过大，可以使用特殊编码的图片，加载时会先加载一张压缩的特别厉害的缩略图，以提高用户体验。</li>
+<li>如果图片展示区域小于图片的真实大小，则因在服务器端根据业务需要先行进行图片压缩，图片压缩后大小与展示一致。</li>
+</ul>
+<h5 id="14、你如何理解HTML结构的语义化？"><a href="#14、你如何理解HTML结构的语义化？" class="headerlink" title="14、你如何理解HTML结构的语义化？"></a>14、你如何理解HTML结构的语义化？</h5><ul>
+<li>去掉或样式丢失的时候能让页面呈现清晰的结构</li>
+<li>屏幕阅读器（如果访客有视障）会完全根据你的标记来“读”你的网页.</li>
+<li>搜索引擎的爬虫也依赖于标记来确定上下文和各个关键字的权重</li>
+<li>你的页面是否对爬虫容易理解非常重要,因为爬虫很大程度上会忽略用于表现的标记,而只注重语义标记.</li>
+<li>便于团队开发和维护    </li>
+</ul>
+<h5 id="15、页面导入样式时，使用link和-import有什么区别？"><a href="#15、页面导入样式时，使用link和-import有什么区别？" class="headerlink" title="15、页面导入样式时，使用link和@import有什么区别？"></a>15、页面导入样式时，使用link和@import有什么区别？</h5><ul>
+<li>link属于XHTML标签，除了加载CSS外，还能用于定义RSS,定义rel连接属性等作用；而@import是CSS提供的，只能用于加载CSS;</li>
+<li>页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;</li>
+<li>import是CSS2.1 提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题;</li>
+</ul>
+<h5 id="16、介绍一下你对浏览器内核的理解？"><a href="#16、介绍一下你对浏览器内核的理解？" class="headerlink" title="16、介绍一下你对浏览器内核的理解？"></a>16、介绍一下你对浏览器内核的理解？</h5><p>主要分成两部分：渲染引擎(layoutengineer或RenderingEngine)和JS引擎。</p>
+<p>渲染引擎：负责取得网页的内容（HTML、XML、图像等等）、整理讯息（例如加入CSS等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其它需要编辑、显示网络内容的应用程序都需要内核。</p>
+<p>JS引擎则：解析和执行javascript来实现网页的动态效果。</p>
+<p>最开始渲染引擎和JS引擎并没有区分的很明确，后来JS引擎越来越独立，内核就倾向于只指渲染引擎。</p>
+<h5 id="17、简述一下你对HTML语义化的理解？"><a href="#17、简述一下你对HTML语义化的理解？" class="headerlink" title="17、简述一下你对HTML语义化的理解？"></a>17、简述一下你对HTML语义化的理解？</h5><ul>
+<li>用正确的标签做正确的事情；</li>
+<li>html语义化让页面的内容结构化，结构更清晰，便于对浏览器、搜索引擎解析；</li>
+<li>即使在没有样式css情况下也以一种文档格式显示，并且是容易阅读的；</li>
+<li>搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO；</li>
+<li>使于读源代码的人对网站更容易将网站分块，便于阅读维护理解。</li>
+</ul>
+<h5 id="18、浏览器是怎么对HTML5的离线存储资源进行管理和加载的？"><a href="#18、浏览器是怎么对HTML5的离线存储资源进行管理和加载的？" class="headerlink" title="18、浏览器是怎么对HTML5的离线存储资源进行管理和加载的？"></a>18、浏览器是怎么对HTML5的离线存储资源进行管理和加载的？</h5><p>在线情况下，浏览器发现html头部有manifest属性，它会请求manifest文件，如果是第一次访问app，那么浏览器就会根据manifest文件的内容下载相应的资源并且进行离线存储。如果已经访问过app并且资源已经离线存储了，那么浏览器就会使用离线的资源加载页面，然后浏览器会对比新的manifest文件与旧的manifest文件，如果文件没有发生改变，就不做任何操作，如果文件改变了，那么就会重新下载文件中的资源并进行离线存储。<br>离线情况下，浏览器就直接使用离线存储的资源。</p>
+<h5 id="19、请描述一下-cookies，sessionStorage-和-localStorage-的区别？"><a href="#19、请描述一下-cookies，sessionStorage-和-localStorage-的区别？" class="headerlink" title="19、请描述一下 cookies，sessionStorage 和 localStorage 的区别？"></a>19、请描述一下 cookies，sessionStorage 和 localStorage 的区别？</h5><p><code>cookie</code>是网站为了标识用户身份而储存在用户本地终端（Client Side）上的数据（通常已经过加密）。cookie数据始终在同源的http请求中携带（即使不需要），也会在浏览器和服务器间来回传递。<br><code>sessionStorage</code>和<code>localStorage</code>不会自动把数据发给服务器，仅在本地保存。<br>存储大小：<br>  cookie数据大小不能超过4K。<br>  sessionStorage和localStorage虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。<br>有效时间：<br>  cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭<br>  sessionStorage  数据在当前浏览器窗口关闭后自动删除<br>  localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"># html</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/07/正则表达式/" rel="prev" title="正则表达式详解">
+                正则表达式详解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="fengpeidong" />
+          <p class="site-author-name" itemprop="name">fengpeidong</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、HTML5的优点与缺点"><span class="nav-number">1.</span> <span class="nav-text">1、HTML5的优点与缺点</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、Doctype作用？严格模式与混杂模式如何区分？有何意义？"><span class="nav-number">2.</span> <span class="nav-text">2、Doctype作用？严格模式与混杂模式如何区分？有何意义？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3、浏览器内核："><span class="nav-number">3.</span> <span class="nav-text">3、浏览器内核：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4、说说你对HTML5认识"><span class="nav-number">4.</span> <span class="nav-text">4、说说你对HTML5认识?</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#5、对web标准以及w3c的理解与认识？"><span class="nav-number">5.</span> <span class="nav-text">5、对web标准以及w3c的理解与认识？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#6、总体会有布局、样式解析和脚本执行三个方面的区别？"><span class="nav-number">6.</span> <span class="nav-text">6、总体会有布局、样式解析和脚本执行三个方面的区别？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#7、div-css的布局较table布局有什么优点？"><span class="nav-number">7.</span> <span class="nav-text">7、div+css的布局较table布局有什么优点？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#8、你能描述一下渐进增强和优雅降级之间的不同吗"><span class="nav-number">8.</span> <span class="nav-text">8、你能描述一下渐进增强和优雅降级之间的不同吗?</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#9、为什么利用多个域名来存储网站资源会更有效？"><span class="nav-number">9.</span> <span class="nav-text">9、为什么利用多个域名来存储网站资源会更有效？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#10、请描述一下cookies，sessionStorage和localStorage的区别？"><span class="nav-number">10.</span> <span class="nav-text">10、请描述一下cookies，sessionStorage和localStorage的区别？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#11、知道的网页制作会用到的图片格式有哪些？"><span class="nav-number">11.</span> <span class="nav-text">11、知道的网页制作会用到的图片格式有哪些？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#12、在css-js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？"><span class="nav-number">12.</span> <span class="nav-text">12、在css/js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#13、一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验？"><span class="nav-number">13.</span> <span class="nav-text">13、一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#14、你如何理解HTML结构的语义化？"><span class="nav-number">14.</span> <span class="nav-text">14、你如何理解HTML结构的语义化？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#15、页面导入样式时，使用link和-import有什么区别？"><span class="nav-number">15.</span> <span class="nav-text">15、页面导入样式时，使用link和@import有什么区别？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#16、介绍一下你对浏览器内核的理解？"><span class="nav-number">16.</span> <span class="nav-text">16、介绍一下你对浏览器内核的理解？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#17、简述一下你对HTML语义化的理解？"><span class="nav-number">17.</span> <span class="nav-text">17、简述一下你对HTML语义化的理解？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#18、浏览器是怎么对HTML5的离线存储资源进行管理和加载的？"><span class="nav-number">18.</span> <span class="nav-text">18、浏览器是怎么对HTML5的离线存储资源进行管理和加载的？</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#19、请描述一下-cookies，sessionStorage-和-localStorage-的区别？"><span class="nav-number">19.</span> <span class="nav-text">19、请描述一下 cookies，sessionStorage 和 localStorage 的区别？</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">fengpeidong</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
